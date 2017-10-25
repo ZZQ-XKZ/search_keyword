@@ -33,7 +33,7 @@ class ScrapySQLItem(Base):
         return get_keyword()
     md5 = Column(String(32), primary_key=True)
     create_time = Column(DateTime)
-    url = Column(String(256))
+    url = Column(String(512))
     origin = Column(String(32))
     text = Column(String(256))
     
